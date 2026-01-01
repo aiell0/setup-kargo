@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+    commit-message:
+      prefix: "chore(deps):"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    versioning-strategy: increase
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "chore(deps):"
+    groups:
+      js-patch:
+        update-types:
+        - "patch"
+      js-minor:
+        update-types:
+        - "minor"
+      js-major:
+        update-types:
+        - "major"
