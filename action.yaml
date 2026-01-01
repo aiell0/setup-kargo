@@ -1,6 +1,10 @@
 name: Setup Kargo
 description: Greet someone and record the time
 
+branding:
+  icon: 'box'
+  color: 'orange'
+
 inputs:
   version:
     description: Version of the CLI
