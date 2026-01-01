@@ -1,0 +1,31 @@
+{
+	"$schema": "https://opencode.ai/config.json",
+	"theme": "tokyonight",
+	"agent": {
+		"build": {
+			"mode": "primary",
+			"model": "anthropic/claude-haiku-4-5-20251001",
+			"tools": {
+				"write": true,
+				"edit": true,
+				"bash": true
+			}
+		},
+		"plan": {
+			"mode": "primary",
+			"model": "anthropic/claude-haiku-4-5-20251001",
+			"tools": {
+				"write": false,
+				"edit": false,
+				"bash": false
+			}
+		},
+		"watcher": {
+			"ignore": [
+				"node_modules/**",
+				"dist/**",
+				".git/**"
+			]
+		}
+	}
+}
