@@ -1,0 +1,17 @@
+name: Setup Kargo
+description: Greet someone and record the time
+
+inputs:
+  version:
+    description: Version of the CLI
+    required: false
+    default: latest
+  use-cache:
+    description: Use the GitHub Actions cache for the CLI
+    required: false
+    default: "true"
+
+runs:
+  using: node20
+  main: dist/index.js
+

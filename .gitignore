@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# If you DON'T commit dist/ (using @vercel/ncc or similar)
+# dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test coverage
+coverage/
+
+# Environment
+.env
+.env.local
+
+# act (local testing)
+.secrets

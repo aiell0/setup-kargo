@@ -1,0 +1,21 @@
+name: Setup Kargo CLI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  install-kargo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install Kargo CLI
+        uses: ./
+        with:
+          version: 0.6.0
+          use-cache: true
+
+      - name: Verify installation
+        run: kargo version
